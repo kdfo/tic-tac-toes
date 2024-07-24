@@ -82,11 +82,11 @@ class Tic_Tac_Toe():
 
         if self.X_wins:
             self.X_score += 1
-            text = 'Winner: Player 1 (X)'
+            text = 'Winner:\nPlayer 1 (X)'
             color = symbol_X_color
         elif self.O_wins:
             self.O_score += 1
-            text = 'Winner: Player 2 (O)'
+            text = 'Winner:\nPlayer 2 (O)'
             color = symbol_O_color
         else:
             self.tie_score += 1

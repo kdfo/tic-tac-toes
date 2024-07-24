@@ -6,16 +6,19 @@ This Python implementation of Tic-Tac-Toe provides a classic two-player experien
 Key Features:
 
 Board Display: The game begins by displaying an empty 3x3 grid, with each cell numbered for easy reference (e.g., 1-9).
+![Screenshot 2024-07-24 154842](https://github.com/user-attachments/assets/67b893f0-54bc-4cb5-aac2-a1dc90a12a1c)
 
 Player Input: Players are prompted to enter a number corresponding to the cell where they want to place their mark ('X' or 'O'). Input validation ensures that only valid moves (empty cells) are accepted.
 
 Turn Alternation: Turns alternate between Player 1 ('X') and Player 2 ('O'). Each player sees the updated board after their move.
+![Screenshot 2024-07-24 154924](https://github.com/user-attachments/assets/b837b4e1-d313-4eca-98ae-bc19d05c0d50)
 
 Winning Condition: After each move, the program checks if the move results in a winning combination. If a player has three marks in a row, they win the game.
 
 Draw Condition: If no player wins and the board is filled with marks (all cells are occupied), the game declares a draw.
 
 Restart Option: After the game ends (either in a win or a draw), players have the option to restart and play again.
+![Screenshot 2024-07-24 155140](https://github.com/user-attachments/assets/56d01c57-3af1-4a3d-acbe-0a0bac80e905)
 
 Implementation Details:
 

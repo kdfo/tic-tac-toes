@@ -3,6 +3,34 @@
 # Email: limisaac781@gmail.com
 from tkinter import *
 import numpy as np
+import pygame
+
+# Initialize pygame
+pygame.init()
+
+# Load sounds
+CLICK_SOUND = 'click.wav'
+WIN_SOUND = 'win.wav'
+DRAW_SOUND = 'draw.wav'
+BACKGROUND_MUSIC = 'background.mp3'
+
+click_sound = pygame.mixer.Sound(CLICK_SOUND)
+win_sound = pygame.mixer.Sound(WIN_SOUND)
+draw_sound = pygame.mixer.Sound(DRAW_SOUND)
+pygame.mixer.music.load(BACKGROUND_MUSIC)
+
+# Play background music
+pygame.mixer.music.play(-1)  # -1 means the music will loop
+
+# Event handling for sounds
+def handle_click_sound():
+    click_sound.play()
+
+def handle_win_sound():
+    win_sound.play()
+
+def handle_draw_sound():
+    draw_sound.play()
 
 def start_game():
     instructions_window.destroy()

@@ -4,13 +4,47 @@
 from tkinter import *
 import numpy as np
 
+def start_game():
+    instructions_window.destroy()
+    play_tictactoe()
+
+def play_tictactoe():
+    root = tk.Tk()
+    root.title("Tic Tac Toe")
+    # Add Tic Tac Toe game code here
+    # For example: buttons, game logic, etc.
+    root.mainloop()
+
+# Create the instructions window
+instructions_window = tk.Tk()
+instructions_window.title("Tic Tac Toe Instructions")
+
+instructions = """Welcome to Tic Tac Toe!
+
+Instructions:
+1. The game is played on a 3x3 grid.
+2. Player 1 is X, Player 2 is O.
+3. Players take turns putting their marks in empty squares.
+4. The first player to get 3 of their marks in a row (horizontal, vertical, or diagonal) wins.
+5. If all 9 squares are filled and no player has 3 marks in a row, the game is a draw.
+
+Click 'Start Game' to begin playing.
+"""
+
+label = tk.Label(instructions_window, text=instructions, justify=tk.LEFT)
+label.pack(padx=20, pady=20)
+
+start_button = tk.Button(instructions_window, text="Start Game", command=start_game)
+start_button.pack(pady=10)
+
+instructions_window.mainloop()
+
 size_of_board = 600
 symbol_size = (size_of_board / 3 - size_of_board / 8) / 2
 symbol_thickness = 50
 symbol_X_color = '#EE4035'
 symbol_O_color = '#0492CF'
 Green_color = '#7BC043'
-
 
 class Tic_Tac_Toe():
     # ------------------------------------------------------------------
